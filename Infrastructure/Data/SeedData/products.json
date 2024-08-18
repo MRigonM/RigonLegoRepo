@@ -1,0 +1,188 @@
+[
+    {
+      "Name": "Batcave™ - Shadow Box",
+      "Description": "This first-ever Shadow Box-style model incorporates movable items, minifigures and a feature-rich Batmobile™ to capture both dynamic tableau and conversation piece in one extraordinary set.",
+      "Price": 200,
+      "PictureUrl": "images/products/batcave.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "NASA Space Shuttle",
+      "Description": "Celebrate the wonders of space with this LEGO® NASA Space Shuttle Discovery (10283) model building set for adults. With 2,354 pieces, this engaging challenge lets you build the Space Shuttle Discovery.",
+      "Price": 150,
+      "PictureUrl": "images/products/spaceShuttle.webp",
+      "ProductTypeId": 3,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "Iron Spider-Man",
+      "Description": "Fans of Spider-Man will love building this collectible tribute to their favorite web-slinger. The buildable LEGO® BrickHeadz™ Iron Spider-Man (40670) set features Spider-Man wearing an Iron Spider-Man suit. With movable mechanical spider arms and a sturdy baseplate.",
+      "Price": 180,
+      "PictureUrl": "images/products/ironSpider.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 3
+    },
+    {
+      "Name": "Green Goblin Construction Figure",
+      "Description": "Put Marvel movie adventures into kids hands with the posable LEGO® Marvel Green Goblin Construction Figure (76284) - the ultimate Spider-Man villain building toy for kids aged 8 and up.",
+      "Price": 300,
+      "PictureUrl": "images/products/greenGoblin.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 3
+    },
+    {
+      "Name": "Space Astronaut",
+      "Description": "LEGO® fans aged 9+ can blast into space to explore new planets by recreating space adventures with this LEGO Creator Space Astronaut (31152) building toy.",
+      "Price": 250,
+      "PictureUrl": "images/products/spaceAstronaut.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 4
+    },
+    {
+      "Name": "NEOM McLaren Formula E Race Car",
+      "Description": "LEGO Technic building sets for kids feature realistic details that introduce young LEGO builders to engineering in an approachable way. Let the LEGO Builder app guide your youngster on an intuitive building adventure.",
+      "Price": 120,
+      "PictureUrl": "images/products/mcLarenCar.webp",
+      "ProductTypeId": 2,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Batmobile™ Tumbler",
+      "Description": "The impressive build-and-display Tumbler from the Dark Knight™ trilogy of Batman movies features an opening roof, which provides access to the driver and passenger seats and control panel.",
+      "Price": 10,
+      "PictureUrl": "images/products/batMobile.webp",
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
+    },
+    {
+      "Name": "R2-D2™",
+      "Description": "To create an eye-catching display, this collectible toy building set also features an R2-D2 LEGO droid figure, a special LEGO Star Wars 25th anniversary minifigure of Darth Malak with a lightsaber and display stand, plus an R2-D2 information plaque.",
+      "Price": 8,
+      "PictureUrl": "images/products/r2d2.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Millennium Falcon™",
+      "Description": "The classic Star Wars™ saga continues in your living room with this collectible LEGO® Star Wars Millennium Falcon build-and-display starship model (75375).",
+      "Price": 15,
+      "PictureUrl": "images/products/falcon.webp",
+      "ProductTypeId": 3,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "AT-AT™",
+      "Description": "This is the AT-AT (75313) that every LEGO® Star Wars™ fan has been waiting for. This epic Ultimate Collector Series build-and-display model features posable legs and head, cannons with a realistic recoil action.",
+      "Price": 18,
+      "PictureUrl": "images/products/atAt.webp",
+      "ProductTypeId": 3,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Darth Vader™ Mech",
+      "Description": "Pay homage to the Dark Lord of the Sith with this collectible LEGO® Star Wars™ Darth Vader Helmet (75304). Immerse yourself in the complex building process and relive classic Star Wars saga scenes as you recreate the iconic shape and sinister details of the helmet in LEGO style.",
+      "Price": 15,
+      "PictureUrl": "images/products/darthVader.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 1
+    },
+    {
+      "Name": "Disney Castle",
+      "Description": "Share your love of Disney Princess characters and their partners with this LEGO® ǀ Disney: Disney Castle (43222) set. Based on several well-known Disney Princess movies, this detailed set showcases different rooms.",
+      "Price": 16,
+      "PictureUrl": "images/products/disneyCastle2.webp",
+      "ProductTypeId": 4,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "EVE & WALL-E",
+      "Description": "Captivate movie fans and kids aged 10+ with this iconic BrickHeadz™ set featuring Disney•Pixar’s EVE & WALL•E (40619) buildable LEGO® figures. Build each of the detailed models, then set them on their individual baseplates for display anywhere.",
+      "Price": 14,
+      "PictureUrl": "images/products/eveWalle.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Stitch",
+      "Description": "Appeal to older kids and Lilo and Stitch fans aged 9+ with this LEGO® ǀ Disney Stitch (43249) buildable play-and-display set, featuring a Stitch character.",
+      "Price": 250,
+      "PictureUrl": "images/products/stitch.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 5
+    },
+    {
+      "Name": "Hogwarts™ Castle and Grounds",
+      "Description": "Capture the magical atmosphere of the Hogwarts™ Castle and Grounds with this stunningly detailed LEGO® Harry Potter™ buildable display model (76419). Relive memorable Harry Potter scenes as you construct the Main Tower, Astronomy Tower, Great Hall and Boathouse.",
+      "Price": 189.99,
+      "PictureUrl": "images/products/hogwarts.webp",
+      "ProductTypeId": 4,
+      "ProductBrandId": 7
+    },
+    {
+      "Name": "Hogwarts Express ™ Train Set with Hogsmeade Station™",
+      "Description": "Recreate the arrival of new Hogwarts™ students with the LEGO® Harry Potter™ Hogwarts Express™ & Hogsmeade™ Station (76423) toy playset for ages 8 and up. The new-for-June-2023 LEGO brick model of the Hogwarts Express features an engine, coal car, 2 passenger carriages and the Trolley Witch's confectionery trolley. ",
+      "Price": 199.99,
+      "PictureUrl": "images/products/hogwartsTrain.webp",
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
+    },
+    {
+      "Name": "McLaren Solus GT & McLaren F1 LM",
+      "Description": "For the first time ever, race fans and kids aged 9 and up can collect a double pack of buildable McLaren hypercars with the LEGO® Speed Champions McLaren Solus GT and McLaren F1 LM (76918) building set. The iconic F1 LM model from the 1990s and the latest Solus GT are now ready for kids to build, display and role-play races.",
+      "Price": 150,
+      "PictureUrl": "images/products/mcLaren2.webp",
+      "ProductTypeId": 2,
+      "ProductBrandId": 2
+    },
+    {
+      "Name": "Venator-Class Republic Attack Cruiser",
+      "Description": "Spark memories of epic Clone Wars adventures with this LEGO® Star Wars™ Ultimate Collector Series version of the Venator-Class Republic Attack Cruiser (75367). Let your mind drift to a galaxy far, far away as you recreate authentic features such as the striking red stripes, command bridge and hangar containing a brick-built scale model of a Republic Gunship.",
+      "Price": 180,
+      "PictureUrl": "images/products/venator.webp",
+      "ProductTypeId": 3,
+      "ProductBrandId": 1
+    },
+
+    {
+      "Name": "Harry Potter™ & Cho Chang",
+      "Description": "Fans can relive epic Quidditch™ games as they build these LEGO® BrickHeadz™ Harry Potter™ & Cho Chang (40616) figures. With authentic details such as the Gryffindor™ and Ravenclaw™ house Quidditch uniforms, plus Golden Snitch™ and broomstick accessory elements, the buildable duo make a magical anytime LEGO gift for kids aged 10 and up and any Harry Potter collector.",
+      "Price": 20,
+      "PictureUrl": "images/products/harryPotterChoChang.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 7
+    },
+    {
+      "Name": "The Amazing Spider-Man",
+      "Description": "Celebrate one of the world’s most beloved Super Heroes with The Amazing Spider-Man (31209) LEGO® Art building set. This unique dimensional piece of art is made from layers of LEGO bricks in which Spider-Man breaks out from the frame and his head and fingers can be put into different poses. Pay homage to a comic-book Super Hero This bold artwork features several details to delight Spider-Man fans. The backdrop replicates the comic book’s Ben-Day-dot printing technique, there are 15 spiders to represent issue no. 15 of Amazing Fantasy in which Spider-Man first appeared in August 1962, and a graphic in the bottom corner with the words: 'The Amazing Spider-Man'.",
+      "Price": 190,
+      "PictureUrl": "images/products/spiderMan.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 3
+    },
+    {
+      "Name": "Durrr Burger",
+      "Description": "Based on the LEGO Fortnite video game, the set lets fans create a display model of Durrr Burger, the iconic restaurant mascot from the Fortnite universe. Young gamers will have loads of fun and victory well done building the model before discovering its exciting details, including the instantly recognizable eyes, tongue and olive on a toothpick.",
+      "Price": 180,
+      "PictureUrl": "images/products/durrrBurger.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 8
+    },
+    {
+      "Name": "Supply Llama",
+      "Description": "Bring gaming adventures to life with this LEGO® Fortnite Supply Llama (77071) building set for gamers. Inspired by the LEGO Fortnite video game, it lets fans aged 12 and up create an awesome video game toy. Young gamers will have hours of fun assembling the Fortnite llama piñata, which is known as the Supply Llama in the LEGO Fortnite video game. ",
+      "Price": 40,
+      "PictureUrl": "images/products/llama.webp",
+      "ProductTypeId": 1,
+      "ProductBrandId": 8
+    },
+    {
+      "Name": "The Avengers Helicarrier",
+      "Description": "LEGO® Marvel The Avengers Helicarrier (76295) is a recreation of the iconic Avengers aircraft from Marvel Studios’ hit movies The Avengers and Avengers: Age of Ultron. With 509 pieces and a sturdy base, this collectible aircraft for adult fans makes a distinctive display piece in any home or office.",
+      "Price": 80,
+      "PictureUrl": "images/products/Avengers.webp",
+      "ProductTypeId": 3,
+      "ProductBrandId": 3
+    }
+
+  ]

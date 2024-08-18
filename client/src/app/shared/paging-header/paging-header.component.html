@@ -1,0 +1,12 @@
+<header *ngIf="totalcount && pageNumber && pageSize">
+    <span *ngIf="totalcount>0">Showing 
+        <strong>
+            {{(pageNumber -1)* pageSize +1}} -
+            {{pageNumber * pageSize
+                > totalcount
+                ? totalcount
+                : pageNumber * pageSize
+            }}
+        </strong> of <strong>{{totalcount}}</strong> Results</span>
+        <span *ngIf="totalcount ===0">There are <strong>0</strong> results for this filer/search</span>
+</header>
