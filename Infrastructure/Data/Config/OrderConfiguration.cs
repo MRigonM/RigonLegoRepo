@@ -11,6 +11,7 @@ namespace Infrastructure.Data.Config
             builder.OwnsOne(o => o.ShipToAddress,a => {
                 a.WithOwner();
             });
+            builder.Navigation(a => a.ShipToAddress).IsRequired();
             builder.Property(s => s.Status)
             .HasConversion(
                 o => o.ToString(),
