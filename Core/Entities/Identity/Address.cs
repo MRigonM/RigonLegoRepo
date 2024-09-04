@@ -13,7 +13,7 @@ namespace Core.Entities.Identity
         public string LastName { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
-        public string ZipCode { get; set; }
+        public string Zipcode { get; set; }
         
         [Required]
         public string AppUserId { get; set; }

@@ -22,7 +22,7 @@ namespace Infrastructure.Identity
                         LastName = "Bob",
                         Street = "Bill Clinton",
                         City = "Prishtine",
-                        ZipCode = "10000"
+                        Zipcode = "10000"
                     }
                 };
                 await userManager.CreateAsync(user,"Pa$$wo0rd");
