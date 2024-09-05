@@ -11,14 +11,14 @@ export interface OrderToCreate {
 export interface Order {
     id: number
     buyerEmail: string
-    oderDate: string
+    orderDate: string
     shipToAddress: Address
     deliveryMethod: string
-    shippingPrice: number
-    orderItems: OrderItem[]
-    subtotal: number
-    total: number
-    status: string
+    shippingPrice: number;
+    orderItems: OrderItem[];
+    subtotal: number;
+    total: number;
+    status: string;
   }
   export interface OrderItem {
     productId: number
