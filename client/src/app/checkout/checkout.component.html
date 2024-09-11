@@ -8,8 +8,8 @@
                 <cdk-step [label]="'Delivery'" [completed]="checkoutForm.get('deliveryForm')?.valid">
                     <app-checkout-delivery [checkoutForm]="checkoutForm"></app-checkout-delivery>
                 </cdk-step>
-                <cdk-step [label]="'Review'" [completed]="checkoutForm.get('reviewForm')?.valid">
-                    <app-checkout-review></app-checkout-review>
+                <cdk-step [label]="'Review'">
+                    <app-checkout-review [appStepper]="appStepper"></app-checkout-review>
                 </cdk-step>
                 <cdk-step [label]="'Payment'" [completed]="checkoutForm.get('paymentForm')?.valid">
                     <app-checkout-payment [checkoutForm]="checkoutForm"></app-checkout-payment>
