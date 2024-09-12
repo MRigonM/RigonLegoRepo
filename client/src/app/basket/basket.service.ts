@@ -21,7 +21,7 @@ export class BasketService {
   createPaymentIntent() {
     return this.http.post<Basket>(this.baseUrl + 'payments/' + this.getCurrentBasketValue()?.id, {})
       .pipe(
-        map(basket =>{
+        map(basket => {
           this.basketSource.next(basket);
         })
       )
@@ -29,8 +29,7 @@ export class BasketService {
 
   setShippingPrice(deliveryMethod: DeliveryMethod) {
     const basket = this.getCurrentBasketValue();
-
-    if(basket) {
+    if (basket) {
       basket.shippingPrice = deliveryMethod.price;
       basket.deliveryMethodId = deliveryMethod.id;
       this.setBasket(basket);
@@ -127,7 +126,7 @@ export class BasketService {
     if (!basket) return;
     const subtotal = basket.items.reduce((a, b) => (b.price * b.quantity) + a, 0);
     const total = subtotal + basket.shippingPrice;
-    this.basketTotalSource.next({ shipping: basket.shippingPrice, total, subtotal });
+    this.basketTotalSource.next({shipping: basket.shippingPrice, total, subtotal});
   }
 
   private isProduct(item: Product | BasketItem): item is Product {

@@ -1,7 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {BasketService} from "../../basket/basket.service";
 import {ToastrService} from "ngx-toastr";
-import {error} from "@angular/compiler-cli/src/transformers/util";
 import {CdkStepper} from "@angular/cdk/stepper";
 
 @Component({
@@ -12,14 +11,14 @@ import {CdkStepper} from "@angular/cdk/stepper";
 export class CheckoutReviewComponent {
   @Input() appStepper?: CdkStepper;
 
-  constructor(private basketService : BasketService, private toastr : ToastrService) {}
+  constructor(private basketService: BasketService, private toastr: ToastrService) {}
 
   createPaymentIntent() {
     this.basketService.createPaymentIntent().subscribe({
       next: () => {
         this.appStepper?.next();
       },
-      error : error => this.toastr.error(error.message)
+      error: error => this.toastr.error(error.message)
     })
   }
 
