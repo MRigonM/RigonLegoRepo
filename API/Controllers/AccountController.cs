@@ -34,13 +34,17 @@ namespace API.Controllers
 
         [Authorize]
         [HttpGet]
-
-        public async Task<ActionResult<UserDto>> GetCurrentUser(){
-
-
+        public async Task<ActionResult<UserDto>> GetCurrentUser()
+        {
             var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
 
-            return new UserDto{
+            if (user == null)
+            {
+                return NotFound(new ApiResponse(404, "User not found"));
+            }
+
+            return new UserDto
+            {
                 Email = user.Email,
                 Token = _tokenService.CreateToken(user),
                 DisplayName = user.DisplayName

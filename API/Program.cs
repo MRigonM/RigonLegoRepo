@@ -9,6 +9,8 @@ using Infrastructure.Identity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.FileProviders;
+using Stripe.Forwarding;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,13 +31,19 @@ app.UseStatusCodePagesWithReExecute("/errors/{0}");
 app.UseSwaggerDocumentation();
 
 app.UseStaticFiles();
+app.UseStaticFiles(new StaticFileOptions
+{
+    FileProvider = new PhysicalFileProvider(
+        Path.Combine(Directory.GetCurrentDirectory(), "Content")), RequestPath = "/Content"
+});
 
 app.UseCors("CorsPolicy");
 
-app.UseAuthentication();// authtic gjith shkon para authriz
-app.UseAuthorization();// se tani merr 401 error 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
+app.MapFallbackToController("Index", "Fallback");
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
