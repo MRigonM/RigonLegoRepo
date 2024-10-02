@@ -51,13 +51,13 @@ export class ProductService {
   }
 
   // Update an existing product
-  updateProduct(id: number, updatedProduct: ProductToCreate): Observable<ProductToCreate> {
-    return this.http.put<ProductToCreate>(this.baseUrl + `products/${id}`, updatedProduct).pipe(
+  updateProduct(id: number, updatedProduct: Product): Observable<Product> {
+    return this.http.put<Product>(this.baseUrl + `products/${id}`, updatedProduct).pipe(
       tap((updatedProductFromServer) => {
-        const updatedProducts = this.productsSource2.value.map(product =>
+        const updatedProducts = this.productsSource.value.map(product =>
           product.id === id ? updatedProductFromServer : product
         );
-        this.productsSource2.next(updatedProducts); // Update product in state
+        this.productsSource.next(updatedProducts); // Update product in state
       }),
       catchError(error => {
         console.error(`Error updating product with id ${id}:`, error);

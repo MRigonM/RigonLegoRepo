@@ -30,6 +30,8 @@ export class ProductDashboardComponent implements OnInit {
 
   ngOnInit(): void {
       this.getProducts();
+      this.getTypes();
+      this.getBrands();
     }
 
   totalcount = 0;
@@ -62,10 +64,10 @@ export class ProductDashboardComponent implements OnInit {
 
   newProduct = this.fb.group({
     name: [''],
-    price: [0],
+    price: [null],
     description: [''],
-    productType: [1],
-    productBrand: [1],
+    productType: [null],
+    productBrand: [null],
     pictureUrl: ['']
   });
   // Create a new product using the service
@@ -77,7 +79,7 @@ export class ProductDashboardComponent implements OnInit {
   }
 
   // Update the existing product using the service
-  onUpdateProduct(product: ProductToCreate) {
+  onUpdateProduct(product: Product) {
     this.productService.updateProduct(product.id, product).subscribe({
       next: () => this.getProducts(),  // Reload the products after updating
       error: (err) => console.error('Failed to update product', err)
@@ -93,16 +95,14 @@ export class ProductDashboardComponent implements OnInit {
   }
 
   getTypes(){
-
     this.shopService.getTypes().subscribe({
-      next: response => this.types = [{id : 0,name : 'All'}, ...response],
+      next: response => this.types = [{id : 0,name : 'Select brand'}, ...response],
       error : error => console.log(error)
     })
   }
   getBrands(){
-
     this.shopService.getBrands().subscribe({
-      next: response => this.brands = [{id : 0,name : 'All'}, ...response],
+      next: response => this.brands = [{id : 0,name : 'Select type'}, ...response],
       error : error => console.log(error)
     })
   }

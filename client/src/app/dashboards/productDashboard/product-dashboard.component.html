@@ -13,6 +13,8 @@
               <th>Type</th>
               <th>Brand</th>
               <th>Price</th>
+              <th>Edit</th>
+              <th>Delete</th>
             </tr>
             </thead>
             <tbody>
@@ -22,6 +24,8 @@
               <td>{{ product.productType }}</td>
               <td>{{ product.productBrand }}</td>
               <td>${{ product.price }}</td>
+              <td><form (ngSubmit)="onUpdateProduct(product)"><button class="btn btn-success">Edit</button></form></td>
+              <td><form (ngSubmit)="onDeleteProduct(product.id)"><button class="btn btn-danger">Delete</button></form></td>
             </tr>
             </tbody>
           </table>
