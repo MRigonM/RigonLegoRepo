@@ -3,7 +3,7 @@
       "Name": "Batcave™ - Shadow Box",
       "Description": "This first-ever Shadow Box-style model incorporates movable items, minifigures and a feature-rich Batmobile™ to capture both dynamic tableau and conversation piece in one extraordinary set.",
       "Price": 200,
-      "PictureUrl": "images/products/batcave.webp",
+      "PictureUrl": "images/products/batcave2.webp",
       "ProductTypeId": 1,
       "ProductBrandId": 6
     },
@@ -35,7 +35,7 @@
       "Name": "Space Astronaut",
       "Description": "LEGO® fans aged 9+ can blast into space to explore new planets by recreating space adventures with this LEGO Creator Space Astronaut (31152) building toy.",
       "Price": 250,
-      "PictureUrl": "images/products/spaceAstronaut.webp",
+      "PictureUrl": "images/products/space.webp",
       "ProductTypeId": 1,
       "ProductBrandId": 4
     },
@@ -83,7 +83,7 @@
       "Name": "Darth Vader™ Mech",
       "Description": "Pay homage to the Dark Lord of the Sith with this collectible LEGO® Star Wars™ Darth Vader Helmet (75304). Immerse yourself in the complex building process and relive classic Star Wars saga scenes as you recreate the iconic shape and sinister details of the helmet in LEGO style.",
       "Price": 15,
-      "PictureUrl": "images/products/darthVader.webp",
+      "PictureUrl": "images/products/darthVaderi.webp",
       "ProductTypeId": 1,
       "ProductBrandId": 1
     },
@@ -91,7 +91,7 @@
       "Name": "Disney Castle",
       "Description": "Share your love of Disney Princess characters and their partners with this LEGO® ǀ Disney: Disney Castle (43222) set. Based on several well-known Disney Princess movies, this detailed set showcases different rooms.",
       "Price": 16,
-      "PictureUrl": "images/products/disneyCastle2.webp",
+      "PictureUrl": "images/products/disney.webp",
       "ProductTypeId": 4,
       "ProductBrandId": 5
     },
@@ -107,7 +107,7 @@
       "Name": "Stitch",
       "Description": "Appeal to older kids and Lilo and Stitch fans aged 9+ with this LEGO® ǀ Disney Stitch (43249) buildable play-and-display set, featuring a Stitch character.",
       "Price": 250,
-      "PictureUrl": "images/products/stitch.webp",
+      "PictureUrl": "images/products/stitchh.webp",
       "ProductTypeId": 1,
       "ProductBrandId": 5
     },
@@ -139,7 +139,7 @@
       "Name": "Venator-Class Republic Attack Cruiser",
       "Description": "Spark memories of epic Clone Wars adventures with this LEGO® Star Wars™ Ultimate Collector Series version of the Venator-Class Republic Attack Cruiser (75367). Let your mind drift to a galaxy far, far away as you recreate authentic features such as the striking red stripes, command bridge and hangar containing a brick-built scale model of a Republic Gunship.",
       "Price": 180,
-      "PictureUrl": "images/products/venator.webp",
+      "PictureUrl": "images/products/Cruiser.webp",
       "ProductTypeId": 3,
       "ProductBrandId": 1
     },
@@ -156,7 +156,7 @@
       "Name": "The Amazing Spider-Man",
       "Description": "Celebrate one of the world’s most beloved Super Heroes with The Amazing Spider-Man (31209) LEGO® Art building set. This unique dimensional piece of art is made from layers of LEGO bricks in which Spider-Man breaks out from the frame and his head and fingers can be put into different poses. Pay homage to a comic-book Super Hero This bold artwork features several details to delight Spider-Man fans. The backdrop replicates the comic book’s Ben-Day-dot printing technique, there are 15 spiders to represent issue no. 15 of Amazing Fantasy in which Spider-Man first appeared in August 1962, and a graphic in the bottom corner with the words: 'The Amazing Spider-Man'.",
       "Price": 190,
-      "PictureUrl": "images/products/spiderMan.webp",
+      "PictureUrl": "images/products/spideri.webp",
       "ProductTypeId": 1,
       "ProductBrandId": 3
     },

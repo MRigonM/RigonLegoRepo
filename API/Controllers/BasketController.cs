@@ -17,7 +17,6 @@ namespace API.Controllers
         }
 
         [HttpGet]
-
         public async Task<ActionResult<CustomerBasket>> GetBasketById(string Id){
 
             var basket = await _basketRepository.GetBasketAsync(Id);
@@ -26,7 +25,6 @@ namespace API.Controllers
         }   
 
         [HttpPost]
-
         public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasketDto basket){
 
             var customerBasket = mapper.Map<CustomerBasketDto,CustomerBasket>(basket);

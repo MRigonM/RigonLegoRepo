@@ -39,7 +39,7 @@ namespace Infrastructure.Data
             base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
-            if(Database.ProviderName == "Microsoft.EntityFrameworkCore.Sqlite"){
+            if(Database.ProviderName == "Microsoft.EntityFrameworkCore.SqlServer"){
 
                 foreach (var entityType in modelBuilder.Model.GetEntityTypes())
                 {

@@ -11,16 +11,24 @@ import { ErrorInterceptor } from './core/interceptors/error.interceptor';
 import { LoadingInterceptor } from './core/interceptors/loading.interceptor';
 import { JwtInterceptor } from './core/interceptors/jwt.interceptor';
 import { OrderDetailedComponent } from './order-detailed/order-detailed.component';
+import { ProductDashboardComponent } from './dashboards/productDashboard/product-dashboard.component';
+import {CommonModule} from "@angular/common";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
-  
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     CoreModule,
-    HomeModule
+    HomeModule,
+    CommonModule,
+    FormsModule,
+    ProductDashboardComponent,
+    ReactiveFormsModule,
+    ProductDashboardComponent
   ],
   providers: [
     {provide : HTTP_INTERCEPTORS,useClass : ErrorInterceptor,multi : true},

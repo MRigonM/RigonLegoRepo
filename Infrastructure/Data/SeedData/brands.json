@@ -1,34 +1,26 @@
 [
   {
-    "Id": 1,
     "Name": "Star-Wars"
   },
   {
-    "Id": 2,
     "Name": "McLaren"
   },
   {
-    "Id": 3,
     "Name": "Marvel"
   },
   {
-    "Id": 4,
     "Name": "NASA"
   },
   {
-    "Id": 5,
     "Name": "Disney"
   },
   {
-    "Id": 6,
     "Name": "DC"
   },
   {
-    "Id": 7,
     "Name": "Warner Bros"
   },
   {
-    "Id": 8,
     "Name": "Other"
   }
 ]

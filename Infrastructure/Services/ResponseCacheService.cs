@@ -1,7 +1,5 @@
 ﻿using System.Text.Json;
 using Core.Interfaces;
-using Microsoft.IdentityModel.Tokens;
-using Newtonsoft.Json;
 using StackExchange.Redis;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
