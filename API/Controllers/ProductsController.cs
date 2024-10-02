@@ -71,5 +71,76 @@ namespace API.Controllers
         {
             return Ok(await _productsTypeRepo.ListAllAsync());
         }
+        
+        [HttpPost]
+        public async Task<ActionResult<ProductToReturnDto>> CreateProduct(ProductCreateDto productDto)
+        {
+            // Check if the ProductBrand exists
+            var brandExists = await _productsBrandRepo.GetByIdAsync(productDto.ProductBrandId);
+            if (brandExists == null)
+            {
+                return BadRequest(new ApiResponse(400, "Invalid Product Brand ID"));
+            }
+
+            // Check if the ProductType exists
+            var typeExists = await _productsTypeRepo.GetByIdAsync(productDto.ProductTypeId);
+            if (typeExists == null)
+            {
+                return BadRequest(new ApiResponse(400, "Invalid Product Type ID"));
+            }
+
+            var product = _mapper.Map<ProductCreateDto, Product>(productDto);
+
+            _productsRepo.Add(product);
+            var result = await _productsRepo.SaveAllAsync();
+
+            if (result <= 0)
+            {
+                return BadRequest(new ApiResponse(400, "Problem creating product"));
+            }
+
+            var productToReturn = _mapper.Map<Product, ProductToReturnDto>(product);
+
+            return CreatedAtAction(nameof(GetProduct), new { id = product.Id }, productToReturn);
+        }
+
+        
+        [HttpPut("{id}")]
+        public async Task<ActionResult> UpdateProduct(int id, ProductUpdateDto productDto)
+        {
+            var product = await _productsRepo.GetByIdAsync(id);
+
+            if (product == null) 
+                return NotFound(new ApiResponse(404, "Product not found"));
+
+            _mapper.Map(productDto, product);
+
+            _productsRepo.Update(product);
+            var result = await _productsRepo.SaveAllAsync();
+
+            if (result <= 0)
+                return BadRequest(new ApiResponse(400, "Problem updating product"));
+
+            return Ok(new { message = "Product updated successfully" });
+        }
+        
+        [HttpDelete("{id}")]
+        public async Task<ActionResult> DeleteProduct(int id)
+        {
+            var product = await _productsRepo.GetByIdAsync(id);
+
+            if (product == null)
+                return NotFound(new ApiResponse(404, "Product not found"));
+
+            _productsRepo.Delete(product);
+            var result = await _productsRepo.SaveAllAsync();
+
+            if (result <= 0)
+                return BadRequest(new ApiResponse(400, "Problem deleting product"));
+
+            return Ok(new { message = "Product deleted successfully" });
+        }
+
+
     }
 }

@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
-using System.Threading.Tasks;
 using API.Dtos;
 using API.Errors;
 using API.Extensions;
@@ -123,5 +118,51 @@ namespace API.Controllers
                 Email = user.Email
             };
         }
+        
+        [Authorize]
+        [HttpPut("update-account")]
+        public async Task<ActionResult<UserDto>> UpdateAccount(UpdateAccountDto updateAccountDto)
+        {
+            var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+
+            if (user == null)
+            {
+                return NotFound(new ApiResponse(404, "User not found"));
+            }
+
+            user.DisplayName = updateAccountDto.DisplayName ?? user.DisplayName;
+            user.Email = updateAccountDto.Email ?? user.Email;
+            user.UserName = updateAccountDto.Email ?? user.UserName;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded) return BadRequest(new ApiResponse(400, "Problem updating the user"));
+
+            return new UserDto
+            {
+                DisplayName = user.DisplayName,
+                Email = user.Email,
+                Token = _tokenService.CreateToken(user)
+            };
+        }
+        
+        [Authorize]
+        [HttpDelete("delete-account")]
+        public async Task<ActionResult> DeleteAccount()
+        {
+            var user = await _userManager.FindByEmailFromClaimsPrincipal(User);
+
+            if (user == null)
+            {
+                return NotFound(new ApiResponse(404, "User not found"));
+            }
+
+            var result = await _userManager.DeleteAsync(user);
+
+            if (!result.Succeeded) return BadRequest(new ApiResponse(400, "Problem deleting the user"));
+
+            return Ok(new { message = "Account deleted successfully" });
+        }
+
     }
 }

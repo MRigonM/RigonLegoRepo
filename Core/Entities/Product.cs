@@ -1,8 +1,7 @@
-
 namespace Core.Entities
 {
     public class Product : BaseEntity
-    {
+    { 
         public String Name { get; set; }
         public String Description { get; set; }
         public decimal Price { get; set; }

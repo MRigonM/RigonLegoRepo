@@ -1,0 +1,114 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header bg-dark text-white">
+          Products List
+        </div>
+        <div class="card-body p-0">
+          <table class="table table-striped table-hover mb-0">
+            <thead>
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Type</th>
+              <th>Brand</th>
+              <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.id }}</td>
+              <td>{{ product.name }}</td>
+              <td>{{ product.productType }}</td>
+              <td>{{ product.productBrand }}</td>
+              <td>${{ product.price }}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5 mb-4" *ngIf="totalcount>0" >
+      <app-pager
+        [totalcount] = "totalcount"
+        [pageSize] = "shopParams.pageSize"
+        [pageNumber]="shopParams.pageNumber"
+        (pageChanged) ="onPageChanged($event)"
+      ></app-pager>
+    </div>
+  </div>
+<!--<div class="container mt-5">
+  &lt;!&ndash; Form for creating a new product &ndash;&gt;
+  <div class="row mb-4">
+    <div class="col-md-8 offset-md-2">
+      <div class="card">
+        <div class="card-header bg-primary text-white">
+          Add New Product
+        </div>
+        <div class="card-body">
+          &lt;!&ndash; Add the formGroup directive to bind the form to the newProduct FormGroup &ndash;&gt;
+          <form [formGroup]="newProduct">
+            <div class="form-group mb-2">
+              <label>Product Name</label>
+              <app-text-input [formControl]="newProduct.controls['name']" [label]="'Enter product name'" ]></app-text-input>
+            </div>
+            <div class="form-group mb-2">
+              <label for="productPrice">Price</label>
+              <input id="productPrice" type="number" class="form-control" formControlName="price" placeholder="Enter product price">
+            </div>
+            <div class="form-group mb-2">
+              <label for="productDescription">Description</label>
+              <textarea id="productDescription" class="form-control" formControlName="description" placeholder="Enter description"></textarea>
+            </div>
+            <div class="form-group mb-2">
+              <label for="productType">Product Type</label>
+              <input id="productType" type="text" class="form-control" formControlName="productType" placeholder="Enter product type">
+            </div>
+            <div class="form-group mb-2">
+              <label for="productBrand">Product Brand</label>
+              <input id="productBrand" type="text" class="form-control" formControlName="productBrand" placeholder="Enter product brand">
+            </div>
+            <div class="form-group mb-2">
+              <label for="pictureUrl">Picture URL</label>
+              <input id="pictureUrl" type="text" class="form-control" formControlName="pictureUrl" placeholder="Enter picture URL">
+            </div>
+            &lt;!&ndash; Button to create a new product &ndash;&gt;
+            <button class="btn btn-success btn-block" type="button" (click)="onCreateProduct()">Add Product</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>-->
+<div class="container mt-5 mb-5">
+  <div class="col-md-8 offset-md-2">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        Add New Product
+      </div>
+      <div class="card-body">
+        <form [formGroup]="newProduct" (ngSubmit)="onCreateProduct()">
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['name']" [label]="'Enter product name'"></app-text-input>
+          </div>
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['price']" [label]="'Enter product price'"></app-text-input>
+          </div>
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['description']" [label]="'Enter product description'"></app-text-input>
+          </div>
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['productType']" [label]="'Enter product type'"></app-text-input>
+          </div>
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['productBrand']" [label]="'Enter product brand'"></app-text-input>
+          </div>
+          <div class="form-group mb-2">
+            <app-text-input [formControl]="newProduct.controls['pictureUrl']" [label]="'Enter picture url'"></app-text-input>
+          </div>
+            <button class="btn btn-success btn-block" type="submit">Create product</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
